@@ -24,9 +24,9 @@ if [ "$1" == "clear_log" ]; then
 	# 清空日志
 	>"${logfile}"
 
-elif [ "$1" == "child" ]; then
-	shift
-	command_name=$1
-	shift
-	"$command_name" "$@"
-fi
+#elif [ "$1" == "child" ]; then
+#	shift
+#	command_name=$1
+#	shift
+#	"$command_name" "$@"
+#fi
