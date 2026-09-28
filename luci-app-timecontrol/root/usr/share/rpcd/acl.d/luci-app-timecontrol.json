@@ -5,7 +5,7 @@
 
             "ubus": {
 					"file": ["exec", "list", "stat", "read"],
-					"uci": [ "*" ],
+					"uci": [ "timecontrol" ],
 					"timecontrol": ["*"]
             },
 		    "file": {
@@ -17,7 +17,7 @@
 	"write": {
             "ubus": {
                 "timecontrol": ["*"],
-                "uci": ["*"]
+            	"uci": [ "timecontrol" ],
       }
     }
   }
