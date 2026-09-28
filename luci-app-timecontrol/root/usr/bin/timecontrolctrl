@@ -324,7 +324,7 @@ main_loop() {
         #[ `uci show $NAME 2>/dev/null | grep "enable='1'" | grep "device" | grep -oE '\[.*?\]' | grep -o '[0-9]' | sort -n | wc -l` eq 0 ] && timecontrol stop && break
         local enabled_devices=$(get_enabled_devices)
         [ -z "$enabled_devices" ] && timecontrol stop && break
-        for id in $(get_enabled_devices); do
+        for id in $enabled_devices; do
             if check_device_control "$id"; then
                 update_device_status "$id" 0  # 允许
             else
