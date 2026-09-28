@@ -4,16 +4,19 @@
 	"read": {
 
             "ubus": {
-
-                        "file": ["exec", "list", "stat", "read"],
-                        "uci": [ "*" ],
-                        "timecontrol": ["*"]
-            }
+					"file": ["exec", "list", "stat", "read"],
+					"uci": [ "*" ],
+					"timecontrol": ["*"]
+            },
+		    "file": {
+      				"/bin/ps": ["exec"],
+      				"/usr/libexec/timecontrol-call": ["exec"],
+      				"/var/log/timecontrol.log": ["read"]
+      			}
 	},
 	"write": {
             "ubus": {
                 "timecontrol": ["*"],
-                "file": ["write"],
                 "uci": ["*"]
       }
     }
