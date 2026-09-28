@@ -36,7 +36,7 @@ function checkTimeControlProcess() {
             }
         }
         
-        return { running: running, pid: null };
+        return { running: running, pid: pid };
     }).catch(function() {
         return { running: false, pid: null };
     });
