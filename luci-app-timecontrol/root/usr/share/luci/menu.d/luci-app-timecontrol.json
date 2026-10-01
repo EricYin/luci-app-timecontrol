@@ -1,7 +1,7 @@
 {
   "admin/network/timecontrol": {
     "title": "Time Control",
-    "order": 10,
+    "order": 100,
     "action": {
       "type": "firstchild"
     },
